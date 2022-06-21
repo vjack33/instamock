@@ -6,17 +6,6 @@ import SendMessageBox from '../components/SendMessageBox'
 import ChatHeaderCard from '../components/ChatHeaderCard'
 
 export default function ChatPage () {
-  const [fbdata, setFbdata] = useState('')
-  const colRef = collection(firestoreDb, 'chats')
-
-  onSnapshot(colRef, (snapshot) => {
-    const posts = []
-    snapshot.docs.forEach((doc) => {
-      posts.push({ ...doc.data(), id: doc.id })
-    })
-    console.log(posts)
-    setFbdata(String(posts))
-  })
 
   return (
         <>
