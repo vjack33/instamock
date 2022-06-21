@@ -1,6 +1,6 @@
 export default {
-  loginScreen: '/',
-  homeScreen: '/home',
+  loginScreen: '/login',
+  homeScreen: '/',
   profileScreen: '/Profile',
   chatScreen: '/Chat'
 }
